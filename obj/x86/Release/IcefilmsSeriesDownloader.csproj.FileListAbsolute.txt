@@ -1,0 +1,35 @@
+F:\Icefilms\IcefilmsSeriesDownloader\bin\Release\Icefilms Series Downloader.exe.config
+F:\Icefilms\IcefilmsSeriesDownloader\bin\Release\Icefilms Series Downloader.exe.manifest
+F:\Icefilms\IcefilmsSeriesDownloader\bin\Release\Icefilms Series Downloader.application
+F:\Icefilms\IcefilmsSeriesDownloader\bin\Release\Icefilms Series Downloader.exe
+F:\Icefilms\IcefilmsSeriesDownloader\bin\Release\Icefilms Series Downloader.pdb
+F:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\IcefilmsSeriesDownloader.AboutBox1.resources
+F:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\IcefilmsSeriesDownloader.Form1.resources
+F:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\IcefilmsSeriesDownloader.frmSearch.resources
+F:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\IcefilmsSeriesDownloader.Properties.Resources.resources
+F:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\IcefilmsSeriesDownloader.csproj.GenerateResource.Cache
+F:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\Icefilms Series Downloader.exe.manifest
+F:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\Icefilms Series Downloader.application
+F:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\Icefilms Series Downloader.exe
+F:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\Icefilms Series Downloader.pdb
+F:\Icefilms\IcefilmsSeriesDownloader\bin\Release\HtmlAgilityPack.dll
+F:\Icefilms\IcefilmsSeriesDownloader\bin\Release\HtmlAgilityPack.pdb
+F:\Icefilms\IcefilmsSeriesDownloader\bin\Release\HtmlAgilityPack.xml
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Release\Icefilms Series Downloader.exe.config
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\Icefilms Series Downloader.exe
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\Icefilms Series Downloader.pdb
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Release\Icefilms Series Downloader.exe.manifest
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Release\Icefilms Series Downloader.application
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Release\Icefilms Series Downloader.exe
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Release\Icefilms Series Downloader.pdb
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Release\HtmlAgilityPack.dll
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Release\HtmlAgilityPack.pdb
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Release\HtmlAgilityPack.xml
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\IcefilmsSeriesDownloader.csprojResolveAssemblyReference.cache
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\IcefilmsSeriesDownloader.AboutBox1.resources
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\IcefilmsSeriesDownloader.Form1.resources
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\IcefilmsSeriesDownloader.frmSearch.resources
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\IcefilmsSeriesDownloader.Properties.Resources.resources
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\IcefilmsSeriesDownloader.csproj.GenerateResource.Cache
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\Icefilms Series Downloader.exe.manifest
+\\VBOXSVR\repos\2016\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Release\Icefilms Series Downloader.application

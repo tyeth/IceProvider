@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.5.2.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\HtmlAgilityPack.1.5.2-beta3\lib\NetCore45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
