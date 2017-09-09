@@ -11,7 +11,7 @@
     <deploymentProvider codebase="http://truejournals.com/icefilms/Icefilms%20Series%20Downloader.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.6" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
     <dependentAssembly dependencyType="install" codebase="Icefilms Series Downloader.exe.manifest" size="4752">
@@ -21,7 +21,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Aq5tmcBSq8wG3ylwx5E7J6zslcY/DDwH7wrlALxLj3I=</dsig:DigestValue>
+        <dsig:DigestValue>mUP/ThYUN55A+CeRSwaRerMKA3o33S8fMEZhJtpDStA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

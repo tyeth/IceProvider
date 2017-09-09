@@ -1,4 +1,6 @@
-﻿namespace IceProvider
+﻿using System;
+
+namespace IceProvider
 {
      
     public class ListViewItem :  IIceEpisode
@@ -6,8 +8,19 @@
         public string Name { get; set; }
         public string    Url { get; set; }
         public bool Selected { get; set; } = false;
-        public bool Checked {get { return Selected; } set { Selected = value; }} 
-        
+        public bool Checked {
+            get => Selected;
+            set => Selected = value;
+        }
+        public ListViewItem()
+        {
+
+        }
+
+        public ListViewItem(params object[] o)
+        {
+            this.Add((string[])o);
+        }
         public void Add(params string[] a)
         {
             Name = a[0];

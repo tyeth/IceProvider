@@ -115,25 +115,30 @@ private int currentProgressTotal = 0;
             this.Invoke(progressDelegate, new object[] { doneEpisodes, totalEpisodes });
             this.Invoke(statusDelegate, new object[] { "Found " + totalEpisodes + " episodes." });
             //<a name=[0-9]+></a>(?<title>Season (?<season>[0-9]+) )?[\(]?(?<year>[0-9]{4})[\\)]?.*?</h3>(?<episodes>.*?)(<h3>|</span>)
-            MatchCollection matches = Regex.Matches(showPage, "<a name=[0-9]+></a>(Season (?<season>[0-9]+) )?[\\(]?(?<year>[0-9\\?]{4})[\\)]?.*?</h3>(?<episodes>.*?)(?:<h3>|</span>)");
-            if (matches.Count < 1)
-            {
-                //textOutput.Text = "Error: No seasons found.";
-                //MessageBox.Show("Error: No seasons found.");
-                this.Invoke(progressDelegate, new object[] { (int)0, (int)100 });
-                this.Invoke(statusDelegate, new object[] { "Error: No seasons found." });
-                return;
-            }
-            foreach (Match match in matches)
-            {
+            //MatchCollection matches = Regex.Matches(showPage, "<a name=[0-9]+></a>(Season (?<season>[0-9]+) )?[\\(]?(?<year>[0-9\\?]{4})[\\)]?.*?</h3>(?<episodes>.*?)(?:<h3>|</span>)");
+            //if (matches.Count < 1)
+            //{
+            //    //textOutput.Text = "Error: No seasons found.";
+            //    //MessageBox.Show("Error: No seasons found.");
+            //    this.Invoke(progressDelegate, new object[] { (int)0, (int)100 });
+            //    this.Invoke(statusDelegate, new object[] { "Error: No seasons found." });
+            //    return;
+            //}
+
                 //textOutput.Text += "Season: " + match.Groups["season"] + " -- Year: " + match.Groups["year"] ;
-                MatchCollection episodeMatches = Regex.Matches(match.Groups["episodes"].ToString(), "ip.php\\?v=(?<vid>[0-9]+)&>(?<season>[0-9]+)x(?<episode>[0-9]+) (?<title>.*?)</a>");
+                MatchCollection episodeMatches = Regex.Matches(
+                    //match.Groups["episodes"].ToString()
+                    showPage
+                    , "ip.php\\?v=(?<vid>[0-9]+)&[\"']?>(?<season>[0-9]+)x(?<episode>[0-9]+) (?<title>.*?)</a>");
                 if (episodeMatches.Count < 1)
                 {
                     //textOutput.Text = "Error: No episodes found for season #" + match.Groups["season"];
                     //MessageBox.Show("Error: No episodes found for season #" + match.Groups["season"] + ".");
                     this.Invoke(progressDelegate, new object[] { (int)0, (int)100 });
-                    this.Invoke(statusDelegate, new object[] { "Error: No episodes found for season #" + match.Groups["season"] + "." });
+                    this.Invoke(statusDelegate, new object[] { "Error: No episodes found for season #" +
+                        1 +
+                        //match.Groups["season"] + 
+                        "." });
                     return;
                 }
                 foreach (Match episode in episodeMatches)
@@ -151,7 +156,7 @@ private int currentProgressTotal = 0;
 
                     //textOutput.Text += "  Season " + episode.Groups["season"] + ", Episode " + episode.Groups["episode"] + ": " + WebUtility.HtmlDecode(episode.Groups["title"].ToString()) + " -- ID: " + episode.Groups["vid"] ;                    
 
-                    MatchCollection sourceMatches = Regex.Matches(sourcesPage, "go\\(([0-9]+)\\)'>Source #[0-9]+:.*?</a>");
+                    MatchCollection sourceMatches = Regex.Matches(sourcesPage, "go\\(([0-9]+)\\)['\"]?>Source #[0-9]+:.*?</a>");
                     bool breakOut = false;
                     bool retrylogic = false;
                     var myArr = Array.Empty<Match>();
@@ -161,7 +166,14 @@ private int currentProgressTotal = 0;
                         var filehost = sourceMatches[i].Groups[0].ToString();
                         filehost = filehost.Substring(filehost.IndexOf("<span"));
                         filehost = getCleanHtml(filehost);
-                        if (IsInHostIgnoreList(filehost)   && sourceMatches.Count > 1) continue;
+                        if (IsInHostIgnoreList(filehost))
+                        {
+                            if (sourceMatches.Count - i - 1 > 1)
+                            {continue;}
+                            else
+                            {Console.WriteLine("no alternative sources left, using host anyway");}
+                        }
+                        
                         int retries = 0;
                         String sourceResponse = getSourceDetails(episode, sec, sourceMatches, i);
                         if (sourceResponse == "" && retrylogic)
@@ -212,7 +224,7 @@ private int currentProgressTotal = 0;
                     }
                     doneEpisodes++;
                     this.Invoke(progressDelegate, new object[] { doneEpisodes, totalEpisodes });
-                }
+                
             }
             this.Invoke(progressDelegate, new object[] { (int)100, (int)100 });
             this.Invoke(statusDelegate, new object[] { "Done!" });

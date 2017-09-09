@@ -8,27 +8,32 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApiCoreApplication.Controllers
 {
-    [Route("api/[controller]")]
     public class DomainController : Controller
     {
-        private IceService _ice;
+        private readonly IceService _ice;
         public DomainController(IceService ice)
         :
             base()
         {
-            _ice = ice;
+            _ice = ice;   // Allowed to set private / readonly only in constructor
         }
         
         
         // GET api/values
         [HttpGet]
-        public string Get()
+        public string Get([FromQuery]bool withSlash=true)
         {
-            return _ice.IceUrlWithSlash();//  ;new string[] {"value1", "value2"};
+            return withSlash ? _ice.IceUrlWithSlash() : _ice.IceUrlWithoutSlash();//  ;new string[] {"value1", "value2"};
+        }
+        [Route("GetLatest")]
+        public string GetLatest([FromQuery]bool withSlash=true)
+        {
+            _ice.GetLatestIceUrl(ForceUpdate: true);
+            return withSlash ? _ice.IceUrlWithSlash() : _ice.IceUrlWithoutSlash();
         }
 
         // GET api/values/tv/series/123
-        [HttpGet("{id}")]
+        [HttpGet("Domain/{id}")]
         public string Get(string id)
         {
             return _ice.IceUrlWithSlash() + id;
@@ -39,19 +44,8 @@ namespace WebApiCoreApplication.Controllers
         public void Post([FromBody] string value)
         {
             if(!IsValidIceUrl(value)) throw new ArgumentException(string.Format("Unfortunately the url {0} could not be set.",value));
-            _ice.standardIceFilmsUrl = value;
+            _ice.CurrentDomain = value;
         }
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }

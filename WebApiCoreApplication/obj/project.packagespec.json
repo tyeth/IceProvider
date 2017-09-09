@@ -1,0 +1,55 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/tyeth/REPOS/2016/win7dev/Icefilms/IcefilmsSeriesDownloader/WebApiCoreApplication/WebApiCoreApplication.csproj",
+    "projectName": "WebApiCoreApplication",
+    "projectPath": "/home/tyeth/REPOS/2016/win7dev/Icefilms/IcefilmsSeriesDownloader/WebApiCoreApplication/WebApiCoreApplication.csproj",
+    "outputPath": "/home/tyeth/REPOS/2016/win7dev/Icefilms/IcefilmsSeriesDownloader/WebApiCoreApplication/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp1.1"
+    ],
+    "frameworks": {
+      "netcoreapp1.1": {
+        "projectReferences": {
+          "/home/tyeth/REPOS/2016/win7dev/Icefilms/IcefilmsSeriesDownloader/IceProvider/IceProvider.csproj": {
+            "projectPath": "/home/tyeth/REPOS/2016/win7dev/Icefilms/IcefilmsSeriesDownloader/IceProvider/IceProvider.csproj"
+          }
+        }
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp1.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "target": "Package",
+          "version": "1.1.2"
+        },
+        "Microsoft.AspNetCore": {
+          "target": "Package",
+          "version": "1.1.1"
+        },
+        "Microsoft.AspNetCore.Mvc": {
+          "target": "Package",
+          "version": "1.1.2"
+        },
+        "Microsoft.Extensions.Logging.Debug": {
+          "target": "Package",
+          "version": "1.1.1"
+        }
+      }
+    }
+  },
+  "runtimes": {
+    "win": {
+      "#import": []
+    },
+    "win-x64": {
+      "#import": []
+    },
+    "win-x86": {
+      "#import": []
+    }
+  }
+}

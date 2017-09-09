@@ -65,3 +65,39 @@ F:/Icefilms/IcefilmsSeriesDownloader/bin/Debug/HtmlAgilityPack.xml
 /home/tyeth/REPOS/2016/win7dev/Icefilms/IcefilmsSeriesDownloader/bin/Debug/Icefilms Series Downloader.exe.manifest
 /home/tyeth/REPOS/2016/win7dev/Icefilms/IcefilmsSeriesDownloader/bin/Debug/Icefilms Series Downloader.application
 /home/tyeth/REPOS/2016/win7dev/Icefilms/IcefilmsSeriesDownloader/bin/Debug/Icefilms Series Downloader.exe
+G:\Icefilms\IcefilmsSeriesDownloader\bin\Debug\Icefilms Series Downloader.exe.config
+G:\Icefilms\IcefilmsSeriesDownloader\bin\Debug\Icefilms Series Downloader.exe.manifest
+G:\Icefilms\IcefilmsSeriesDownloader\bin\Debug\Icefilms Series Downloader.application
+G:\Icefilms\IcefilmsSeriesDownloader\bin\Debug\Icefilms Series Downloader.exe
+G:\Icefilms\IcefilmsSeriesDownloader\bin\Debug\Icefilms Series Downloader.pdb
+G:\Icefilms\IcefilmsSeriesDownloader\bin\Debug\HtmlAgilityPack.dll
+G:\Icefilms\IcefilmsSeriesDownloader\bin\Debug\HtmlAgilityPack.pdb
+G:\Icefilms\IcefilmsSeriesDownloader\bin\Debug\HtmlAgilityPack.xml
+G:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\IcefilmsSeriesDownloader.csprojResolveAssemblyReference.cache
+G:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\IcefilmsSeriesDownloader.AboutBox1.resources
+G:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\Ice.IcefilmsSeriesDownloader.Form1.resources
+G:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\IcefilmsSeriesDownloader.frmSearch.resources
+G:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\IcefilmsSeriesDownloader.Properties.Resources.resources
+G:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\IcefilmsSeriesDownloader.csproj.GenerateResource.Cache
+G:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\Icefilms Series Downloader.exe.manifest
+G:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\Icefilms Series Downloader.application
+G:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\Icefilms Series Downloader.exe
+G:\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\Icefilms Series Downloader.pdb
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Debug\Icefilms Series Downloader.exe.config
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Debug\Icefilms Series Downloader.exe.manifest
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Debug\Icefilms Series Downloader.application
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Debug\Icefilms Series Downloader.exe
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Debug\Icefilms Series Downloader.pdb
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Debug\HtmlAgilityPack.dll
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Debug\HtmlAgilityPack.pdb
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\bin\Debug\HtmlAgilityPack.xml
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\IcefilmsSeriesDownloader.csprojResolveAssemblyReference.cache
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\IcefilmsSeriesDownloader.AboutBox1.resources
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\Ice.IcefilmsSeriesDownloader.Form1.resources
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\IcefilmsSeriesDownloader.frmSearch.resources
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\IcefilmsSeriesDownloader.Properties.Resources.resources
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\IcefilmsSeriesDownloader.csproj.GenerateResource.Cache
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\Icefilms Series Downloader.exe.manifest
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\Icefilms Series Downloader.application
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\Icefilms Series Downloader.exe
+\\VBOXSVR\win7dev\Icefilms\IcefilmsSeriesDownloader\obj\x86\Debug\Icefilms Series Downloader.pdb

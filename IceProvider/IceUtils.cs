@@ -44,5 +44,45 @@ namespace IceProvider
             if (pos >= 0) {  st = st.Substring(0, pos);  }
             return st;
         }
+        
+        
+        public static string WithOrWithoutTrailingChar(string input, char totest, bool trailingDesired = true)
+        {
+            try
+            {
+                switch (trailingDesired)
+                {
+                    case true:
+                        return input[input.Length - 1] == totest
+                            ? input
+                            : input + totest;
+                        break;
+
+                    case false:
+                        return input[input.Length - 1] == totest
+                            ? input.Substring(0, input.Length - 1)
+                            : input;
+
+                        break;
+
+
+                    default:
+                        throw new Exception("fatal");
+                        break;
+                }
+
+            }
+            catch (ArgumentOutOfRangeException ae)
+            {
+                console.log(ae + " aint long enough");
+                return input;
+            }
+            catch (Exception e)
+            {
+                console.log("Fatal error returning input with" + (trailingDesired ? "" : "out") + " a " + totest + ", returned input anyway");
+                console.log(e);
+                return input;
+            }
+        }
     }
 }

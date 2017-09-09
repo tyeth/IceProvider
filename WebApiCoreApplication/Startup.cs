@@ -14,6 +14,7 @@ namespace WebApiCoreApplication
     {
         public Startup(IHostingEnvironment env)
         {
+            
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
@@ -27,6 +28,7 @@ namespace WebApiCoreApplication
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddSingleton(new IceProvider.IceService());
             // Add framework services.
             services.AddMvc();
@@ -37,7 +39,7 @@ namespace WebApiCoreApplication
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-
+            app.UseCors(builder=>builder.WithOrigins("*"));
             app.UseMvc();
         }
     }

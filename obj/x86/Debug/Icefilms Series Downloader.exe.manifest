@@ -43,26 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HtmlAgilityPack.dll" size="132608">
-      <assemblyIdentity name="HtmlAgilityPack" version="1.4.9.5" publicKeyToken="BD319B19EAF3B43A" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HtmlAgilityPack.dll" size="139264">
+      <assemblyIdentity name="HtmlAgilityPack" version="1.5.2.0" publicKeyToken="BD319B19EAF3B43A" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0wRkMMxsmVD2JVWyS1z4euhLiiZXxjJ8Akk2nr5sNLE=</dsig:DigestValue>
+        <dsig:DigestValue>Ckl61weOSlZRZfHs9AZgSrXiEZUBpWoOVy8xUqavn7Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Icefilms Series Downloader.exe" size="193536">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Icefilms Series Downloader.exe" size="193024">
       <assemblyIdentity name="Icefilms Series Downloader" version="0.0.0.1" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>K6Cd78/e+zt88CKKg4gmdST+DIzGjvtyI6cGMwkOWaw=</dsig:DigestValue>
+        <dsig:DigestValue>CQvXCMLdD5fBT3gJhk85V01r32e6tySDwwf1eCm7qao=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
