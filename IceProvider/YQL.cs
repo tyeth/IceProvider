@@ -5,25 +5,32 @@ namespace YQL
 {
     public class Url
     {
-        [JsonProperty(PropertyName="execution-start-time")]
+        [JsonProperty(PropertyName = "execution-start-time")]
         public string execution_start_time { get; set; }
-        [JsonProperty(PropertyName="execution-stop-time")]
+
+        [JsonProperty(PropertyName = "execution-stop-time")]
         public string execution_stop_time { get; set; }
-        [JsonProperty(PropertyName="execution-time")]
+
+        [JsonProperty(PropertyName = "execution-time")]
         public string execution_time { get; set; }
+
         public string content { get; set; }
     }
 
     public class Javascript
     {
         public string execution_start_time { get; set; }
-        [JsonProperty(PropertyName="execution-stop-time")]
+
+        [JsonProperty(PropertyName = "execution-stop-time")]
         public string execution_stop_time { get; set; }
-        [JsonProperty(PropertyName="execution-time")]
+
+        [JsonProperty(PropertyName = "execution-time")]
         public string execution_time { get; set; }
-        [JsonProperty(PropertyName="instructions-used")]
+
+        [JsonProperty(PropertyName = "instructions-used")]
         public string instructions_used { get; set; }
-        [JsonProperty(PropertyName="table-name")]
+
+        [JsonProperty(PropertyName = "table-name")]
         public string table_name { get; set; }
     }
 
@@ -32,11 +39,14 @@ namespace YQL
         public List<Url> url { get; set; }
         public string publiclyCallable { get; set; }
         public List<Javascript> javascript { get; set; }
-        [JsonProperty(PropertyName="user-time")]
+
+        [JsonProperty(PropertyName = "user-time")]
         public string user_time { get; set; }
-        [JsonProperty(PropertyName="service-time")]
+
+        [JsonProperty(PropertyName = "service-time")]
         public string service_time { get; set; }
-        [JsonProperty(PropertyName="build-version")]
+
+        [JsonProperty(PropertyName = "build-version")]
         public string build_version { get; set; }
     }
 

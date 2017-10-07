@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace IcefilmsSeriesDownloader
@@ -31,37 +25,34 @@ namespace IcefilmsSeriesDownloader
         private void DropText(DragEventArgs e)
         {
             if (e.GetType() == typeof(string))
-            {
-                txtSearch.Text = e.Data.GetData(System.Windows.Forms.DataFormats.Text).ToString();
-            }
+                txtSearch.Text = e.Data.GetData(DataFormats.Text).ToString();
             else
-            {
                 try
                 {
-                    txtSearch.Text = e.Data.GetData(System.Windows.Forms.DataFormats.Text).ToString();
+                    txtSearch.Text = e.Data.GetData(DataFormats.Text).ToString();
                 }
                 catch (Exception)
                 {
-
                 }
-            }
         }
 
         private void frmSearch_DragDrop(object sender, DragEventArgs e)
         {
-           // DropText(e);
+            // DropText(e);
         }
 
         private void txtSearch_DragEnter(object sender, DragEventArgs e)
         {
             e.Effect = DragDropEffects.Link;
-            if (e.KeyState==1){
-
-            }else{
-                Console.WriteLine( e.KeyState);// == MouseButtons.None)
+            if (e.KeyState == 1)
+            {
             }
-            
-                this.Activate();
+            else
+            {
+                Console.WriteLine(e.KeyState); // == MouseButtons.None)
+            }
+
+            Activate();
             // DropText(e);
         }
 
@@ -82,7 +73,6 @@ namespace IcefilmsSeriesDownloader
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            
         }
     }
 }

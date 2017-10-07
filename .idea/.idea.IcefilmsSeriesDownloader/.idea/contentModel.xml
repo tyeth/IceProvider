@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.local/share/JetBrains/Transient/ReSharperHost/v10/SolutionCaches/_IcefilmsSeriesDownloader.-603942385.00" t="ExcludeRecursive" />
-    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.reporters.netstandard15.dll" t="Include" />
-    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.utility.netstandard15.dll" t="Include" />
-    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="$USER_HOME$/.Rider2017.2/system/resharper-host/local/Transient/ReSharperHost/v10/SolutionCaches/_IcefilmsSeriesDownloader.-603942385.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.0-beta5-build3769/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.0-beta5-build3769/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.0-beta5-build3769/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="AboutBox1.Designer.cs" t="Include" />
       <e p="AboutBox1.cs" t="Include" />
@@ -14,10 +14,11 @@
         <e p="UnitTest_IceService.cs" t="Include" />
         <e p="UnitTest_IceUtils.cs" t="Include" />
         <e p="UnitTest_WebApi_DomainController.cs" t="Include" />
+        <e p="UnitTest_WebApi_EpisodeController.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp1.1" t="Include">
+            <e p="netcoreapp2.0" t="Include">
               <e p="CorexUnitTestProject.AssemblyInfo.cs" t="Include" />
               <e p="CorexUnitTestProject.Program.cs" t="Include" />
             </e>
@@ -72,24 +73,36 @@
         <e p="Controllers" t="Include">
           <e p="DomainController.cs" t="Include" />
           <e p="EpisodeController.cs" t="Include" />
+          <e p="HomeController.cs" t="Include" />
         </e>
+        <e p="Index.cshtml" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="ScaffoldingReadMe.txt" t="Include" />
         <e p="Startup.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Home" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+        </e>
         <e p="WebApiCoreApplication.csproj" t="IncludeRecursive" />
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp1.1" t="Include">
+            <e p="netcoreapp2.0" t="Include">
               <e p="WebApiCoreApplication.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
-        <e p="wwwroot" t="Include" />
+        <e p="wwwroot" t="Include">
+          <e p="Ice7.1.js" t="Include" />
+          <e p="icedivx.html" t="Include" />
+          <e p="script.js" t="Include" />
+        </e>
       </e>
       <e p="app.config" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
@@ -99,7 +112,6 @@
       <e p="icefilms-series-test.ico" t="Include" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="packages.config" t="Include" />
     </e>
   </component>
   <component name="RiderRiderContentModelStore">

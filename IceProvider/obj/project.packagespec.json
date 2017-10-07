@@ -22,6 +22,10 @@
           "target": "Package",
           "version": "1.1.2"
         },
+        "HtmlAgilityPack": {
+          "target": "Package",
+          "version": "1.6.0-beta1"
+        },
         "Newtonsoft.Json": {
           "target": "Package",
           "version": "10.0.3"

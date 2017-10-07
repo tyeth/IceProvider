@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/tyeth/.dotnet/store/|arch|/|tfm|",
-      "/home/tyeth/.nuget/packages"
+      "C:\\Users\\tyeth\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\tyeth\\.nuget\\packages"
     ]
   }
 }

@@ -3,3 +3,19 @@
 ################################################################################
 
 /CorexUnitTestProject/obj
+.idea/
+.vs/
+.vscode/
+CorexUnitTestProject/bin
+IceProvider/bin
+NetStandardNUnitTest/bin
+WebApiCoreApplication/bin
+CorexUnitTestProject/obj
+IceProvider/obj
+NetStandardNUnitTest/obj
+WebApiCoreApplication/obj
+obj/
+obj
+obj/x86
+obj/x86/Debug
+obj/x86/Release

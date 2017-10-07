@@ -2,6 +2,6 @@
 {
     public interface IIceService
     {
-       string CurrentDomain { get; set; }
+        string CurrentDomain { get; set; }
     }
 }

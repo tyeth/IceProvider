@@ -62,17 +62,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CQvXCMLdD5fBT3gJhk85V01r32e6tySDwwf1eCm7qao=</dsig:DigestValue>
+        <dsig:DigestValue>/l1yXW0U2n1SnxxZMePAU5rWSawi8c7YI3IKnShdqg8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Icefilms Series Downloader.exe.config" size="161">
+  <file name="Icefilms Series Downloader.exe.config" size="184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>1SR2HBfPDeqUEJ8/zazS7LZ1UBFf+eAwf3jAUFVBnv4=</dsig:DigestValue>
+      <dsig:DigestValue>1mDKuA/VOS0SHam1h0s/b0f1eCGWuVbyQfWiiy8DnTA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="icefilms-series-test.ico" size="68774">

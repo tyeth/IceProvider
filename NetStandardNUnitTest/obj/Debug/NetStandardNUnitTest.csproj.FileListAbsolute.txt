@@ -12,19 +12,6 @@
 /home/tyeth/REPOS/2016/win7dev/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/obj/Debug/NetStandardNUnitTest.csproj.CoreCompileInputs.cache
 /home/tyeth/REPOS/2016/win7dev/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/obj/Debug/NetStandardNUnitTest.dll
 /home/tyeth/REPOS/2016/win7dev/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/obj/Debug/NetStandardNUnitTest.pdb
-G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/NetStandardNUnitTest.dll
-G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/NetStandardNUnitTest.pdb
-G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/Icefilms Series Downloader.exe
-G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/nunit.framework.dll
-G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/HtmlAgilityPack.dll
-G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/Icefilms Series Downloader.pdb
-G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/Icefilms Series Downloader.exe.config
-G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/nunit.framework.xml
-G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/HtmlAgilityPack.pdb
-G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/HtmlAgilityPack.xml
-G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/obj/Debug/NetStandardNUnitTest.csprojResolveAssemblyReference.cache
-G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/obj/Debug/NetStandardNUnitTest.dll
-G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/obj/Debug/NetStandardNUnitTest.pdb
 //VBOXSVR/win7dev/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/NetStandardNUnitTest.dll
 //VBOXSVR/win7dev/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/NetStandardNUnitTest.pdb
 //VBOXSVR/win7dev/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/Icefilms Series Downloader.exe
@@ -36,5 +23,20 @@ G:/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/obj/Debug/NetStandardN
 //VBOXSVR/win7dev/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/HtmlAgilityPack.pdb
 //VBOXSVR/win7dev/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/bin/Debug/HtmlAgilityPack.xml
 //VBOXSVR/win7dev/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/obj/Debug/NetStandardNUnitTest.csprojResolveAssemblyReference.cache
+//VBOXSVR/win7dev/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/obj/Debug/NetStandardNUnitTest.csproj.CoreCompileInputs.cache
 //VBOXSVR/win7dev/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/obj/Debug/NetStandardNUnitTest.dll
 //VBOXSVR/win7dev/Icefilms/IcefilmsSeriesDownloader/NetStandardNUnitTest/obj/Debug/NetStandardNUnitTest.pdb
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\bin\Debug\NetStandardNUnitTest.dll
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\bin\Debug\NetStandardNUnitTest.pdb
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\bin\Debug\Icefilms Series Downloader.exe
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\bin\Debug\nunit.framework.dll
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\bin\Debug\HtmlAgilityPack.dll
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\bin\Debug\Icefilms Series Downloader.pdb
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\bin\Debug\Icefilms Series Downloader.exe.config
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\bin\Debug\nunit.framework.xml
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\bin\Debug\HtmlAgilityPack.pdb
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\bin\Debug\HtmlAgilityPack.xml
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.csprojResolveAssemblyReference.cache
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.csproj.CoreCompileInputs.cache
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.dll
+G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.pdb

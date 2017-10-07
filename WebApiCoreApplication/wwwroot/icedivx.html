@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+07493866404 wad
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6021891-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<head>
+    <meta name="referrer" content="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//www.icefilms.info/lite.css" />
+    <style type="text/css">
+        body {
+            background-color:black;
+            color:white;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:12px;
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+<div style="position:relative; height:368px; width:600px; background-color:black;">
+    <div id="loading" style="visibility:hidden; position:absolute; width:45%; right:0; text-align:center; top:50%; height:100px; margin-top:-50px; background-color:black;">
+        <B style="font-size:24pt;"><i>Loading</i> <img src=/images/ajax-loader.gif width=25></B><BR><BR>
+        <b style="font-size:20px;"><label id=timer></label></b>
+        <p>Please wait while your video loads.</div>
+    <script>var t = 0;		var go = 0;
+    function countdown(){
+        t-=1;
+        if (t>=0) {
+            document.getElementById('timer').innerHTML='...in '+t+' seconds';
+            setTimeout("countdown();",1000);
+        }
+        else if (go=='play') {location.href=document.getElementById('playbutton').href;}
+        else if (go=='dl') {location.href=document.getElementById('downloadbutton').href;}
+        else {document.getElementById('timer').innerHTML='';}
+    }
+    countdown();
+
+    function showHideDivs(evt) {
+        document.getElementById('fakeVidPlayer').style.visibility='hidden';
+        document.getElementById('buttons').style.visibility='hidden';
+        document.getElementById('loading').style.visibility='visible';
+        onbeforeunload='';
+        if (t>0) {
+            if(evt.preventDefault) evt.preventDefault();
+            else evt.returnValue = false;
+        }
+    }
+
+    function noref(url){
+        var i = document.createElement('iframe');
+        i.style.display = 'none';
+        i.src = '/noref.php?url='+url;
+        document.body.appendChild(i);
+        return false;
+    }
+
+    function doDownload(url){
+        // return noref(url);
+        window.open(url);
+        return false;
+    }
+
+    function streamInVLC(){
+        var host='';
+        if (document.referrer) host = document.referrer.match("^https?://(www\.)?([a-z0-9]+)\.[a-z]+/")[2];
+        location.href=document.location.protocol+'//www.icedivx.com/url2m3u.php?url=https%3A%2F%2Fclicknupload.org%2F53szhmrxbaij&host='+host;
+        return false;
+    }
+
+    function getDWPver(){
+        var userAgent = navigator.userAgent;
+        if (userAgent.search(/msie/i) != -1){ // IE
+            var dwp = null;
+            try{
+                dwp = new ActiveXObject('npdivx.DivXBrowserPlugin.1');
+            } catch (e) { }
+
+            if (dwp) return dwp.GetVersion();
+        }
+        else if (navigator.plugins != null && navigator.plugins.length > 0){ // FF, etc.
+            var plugs = navigator.plugins;
+            for (i in plugs){
+                if (plugs[i].description && (results = plugs[i].description.match(/DivX(?: | Plus )Web Player[a-z ]*([0-9.]*)/)))
+                    return results[1];
+            }
+        }
+        return "0";
+    }
+
+    function handleDWPplaybutton(){
+        var DWPver = getDWPver();
+        if ( (DWPver.substr(0,1) == 1 && document.getElementById('downloadbutton').href.match(/\.(avi|divx)(\?.+)?$/i))
+            ||(DWPver.substr(0,1) >= 2 && document.getElementById('downloadbutton').href.match(/\.(avi|divx|mkv|mp4|mov)(\?.+)?$/i))
+        ){
+            document.getElementById('VLCplaybutton').style.right = "106.5px";
+            document.getElementById('playbutton').href += "&dwp="+DWPver.substr(0,1);
+            document.getElementById('playbutton').style.display = "block";
+        }
+        else //if (!document.getElementById('downloadbutton').href.match(/\.avi$/i))
+        {
+            document.getElementById('VLCplaybutton').style.right = "106.5px";
+            document.getElementById('playbutton').style.background = "url(/images/playbutton-html52.png)";
+            document.getElementById('playbutton').title = "Try to stream in browser";
+            document.getElementById('playbutton').style.display = "block";
+        }
+    }
+    </script>
+    <div id="fakeVidPlayer" style="width: 100%;height: 342px;background: 0 0/100% 342px url(/images/vidimg.jpg);">
+        <div style="position:absolute; bottom:32px; right:10px;"><a href="http://www.videolan.org/vlc/" target="_blank">Install VLC</a></div>
+        <a href="javascript:document.getElementById('playbutton').click();" title="Try to stream in browser" onmouseover="document.getElementById('playbutton').style.backgroundPosition='bottom';document.getElementById('playbutton').style.backgroundColor='#333'" onmouseout="document.getElementById('playbutton').style.backgroundPosition='top';document.getElementById('playbutton').style.backgroundColor='#111'">
+            <div style="position:absolute; bottom:0; left:0; height:26px; width:100%; background: #111 repeat-x url(/images/divxcontrols2.png);"></div>
+            <div style="position:absolute; bottom:0; left:0; height:26px; width:71px; background: #111 url(/images/divxcontrols1.png);"></div>
+            <div style="position:absolute; bottom:0; right:0; height:26px; width:264px; background: #111 url(/images/divxcontrols3.png);"></div>
+        </a></div>
+    <div style="position:absolute; bottom:-40px; left:0;">
+        Stream your high quality hosted files for free with icedivx.com!
+    </div>
+    <div id="buttons" style="position: absolute; top:50%; left:50%; width:500px; height:250px; margin-left:-250px; margin-top:-138px; ">
+        <div style="width:500px; left:0px;">
+            <div style="width:300px; float:left; "></div>
+            <center>
+                <a id="VLCplaybutton" onClick="" href="javascript:streamInVLC();" title="Stream in VLC or other external video player" style="border-radius: 4px; display: block; position: absolute; top: 88.375px; right: 76.5px; z-index: 1; width: 48px; height: 48px; background: #111 url(/images/playbutton-vlc5.png) top;" onMouseOver="this.style.backgroundPosition='bottom';this.style.backgroundColor='#333'" onMouseOut="this.style.backgroundPosition='top';this.style.backgroundColor='#111'"></a>
+                <a id="playbutton" onClick="go='play';showHideDivs(event)" title="Stream in DivX Web Player" href="/video.php?vurl=https://clicknupload.org/53szhmrxbaij&h=350&w=600&img=&ttl=&go=USA" style="border-radius: 4px; display: none; position: absolute; top: 88.375px; right: 46.5px; z-index: 1; width: 48px; height: 48px; background: #111 url(/images/playbutton-dwp5.png) top;" onMouseOver="this.style.backgroundPosition='bottom';this.style.backgroundColor='#333'" onMouseOut="this.style.backgroundPosition='top';this.style.backgroundColor='#111'"></a>
+                <a id="downloadbutton" onClick="return doDownload(this.href);" title="Download" href="https://clicknupload.org/53szhmrxbaij" style="border-radius: 4px; display: block; position: absolute; top: 152.375px; right: 28.5px; z-index: 1; width: 144px; height: 48px; background: #111 url(/images/downloadbutton.png) top" onMouseOver="this.style.backgroundPosition='bottom';this.style.backgroundColor='#333'" onMouseOut="this.style.backgroundPosition='top';this.style.backgroundColor='#111'"></a>
+                <script>handleDWPplaybutton();</script>
+        </div>
+    </div>
+    <div style="position:absolute; top:0; left:0;">
+        <span style=font-size:10px;font-family:Impact;>Thank you for choosing</span><br>
+        &nbsp; &nbsp;<a href="http://www.icedivx.com" target=_blank style="text-decoration:none; font-weight:bold; font-size:25px;"><span style="color:#09F;">Ice</span><span style="color:#dddddd;">DivX</span></a>
+    </div>
+
+</body>
+</html>

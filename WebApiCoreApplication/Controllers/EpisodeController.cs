@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using IceProvider;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebApiCoreApplication.Controllers
 {
@@ -10,27 +10,36 @@ namespace WebApiCoreApplication.Controllers
         private readonly IceService _ice;
 
         public EpisodeController(IceService ice)
-            :
-            base()
         {
             _ice = ice; // Allowed to set private / readonly only in constructor
-            if (_ice.GetIceUrlStatus() != IceUrlStateEnum.Updated) _ice.GetLatestIceUrl(ForceUpdate: true);
+            if (_ice.GetIceUrlStatus() != IceUrlStateEnum.Updated) _ice.GetLatestIceUrl(true);
         }
-
-
+        
         [HttpGet("Episode/Get")]
-        public async Task<IActionResult> Get([FromQuery]string id)
+        public async Task<IActionResult> Get([FromQuery] string id)
         {
-            await _ice.GetEpisodesFromUrl(_ice.IceUrlWithSlash() + "tv/series/" + id);
-            return  (Json(_ice.Results));
+            await _ice.GetEpisode(id);
+            return Json(_ice.Results);
         }
 
-//        // POST api/values
-//        [HttpPost]
-//        public void Post([FromBody] string value)
-//        {
-//            if(!IsValidIceUrl(value)) throw new ArgumentException(string.Format("Unfortunately the url {0} could not be set.",value));
-//            _ice.CurrentDomain = value;
-//        }
+        [HttpGet("Episode/GetSeries")]
+        public async Task<IActionResult> GetSeries([FromQuery] string id)
+        {
+            await _ice.GetEpisodesFromSeriesUrl(_ice.IceUrlWithSlash() + "tv/series/" + id);
+            return Json(_ice.Results);
+        }
+
+        [HttpGet("Episode/Multiple")]
+        public async Task<IActionResult> Multiple([FromQuery] string[] id)
+        {   
+            var ret = new List<IIceEpisode>();
+            foreach (var item in id)
+            {
+                await _ice.GetEpisode(item);
+                _ice.Results.ForEach(x=> { ret.Add(x); }) ;
+            }
+            return Json(ret);
+        }
+
     }
 }
