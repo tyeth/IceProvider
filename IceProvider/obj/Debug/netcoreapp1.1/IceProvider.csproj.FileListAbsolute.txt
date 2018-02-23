@@ -40,3 +40,4 @@ C:\Users\Tyeth\source\repos\IceProvider\IceProvider\obj\Debug\netcoreapp1.1\IceP
 C:\Users\Tyeth\source\repos\IceProvider\IceProvider\obj\Debug\netcoreapp1.1\IceProvider.AssemblyInfo.cs
 C:\Users\Tyeth\source\repos\IceProvider\IceProvider\obj\Debug\netcoreapp1.1\IceProvider.dll
 C:\Users\Tyeth\source\repos\IceProvider\IceProvider\obj\Debug\netcoreapp1.1\IceProvider.pdb
+C:\Users\Tyeth\source\repos\IceProvider\IceProvider\obj\Debug\netcoreapp1.1\IceProvider.csprojResolveAssemblyReference.cache

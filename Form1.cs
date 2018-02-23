@@ -55,6 +55,7 @@ namespace Ice.IcefilmsSeriesDownloader
             listViewDelegate = updateListView;
             statusDelegate = updateStatus;
             InitializeComponent();
+            resolveUrl();
         }
 
         private void updateStatus(string status)
@@ -84,6 +85,30 @@ namespace Ice.IcefilmsSeriesDownloader
             var th = new Thread(grabData);
             th.IsBackground = true;
             th.Start(edtShowURL.Text);
+        }
+
+        public void resolveUrl()
+        {
+            //var my = await httpGet(unyql, "",yahooReferrer);
+            var result = httpGet("https://unblocked-pw.github.io", "", "https://unblocked-pw.github.io");
+
+            //var json = JsonConvert.DeserializeObject<YQL.RootObject>(my);
+            //var result = json?.query?.results?.result;
+            // console.log(result);
+            var rx = new Regex("<a.*?href=['\"](.*?icefilms.*?)['\"]",
+                RegexOptions.IgnoreCase | RegexOptions.Multiline | RegexOptions.CultureInvariant);
+
+            var ix = new Regex("icefilms",
+                RegexOptions.IgnoreCase | RegexOptions.Multiline | RegexOptions.CultureInvariant);
+
+
+            var x = rx.Matches(result);
+            foreach (Match match in x)
+            {
+                edtShowURL.Text = edtShowURL.Text.Replace(standardIceFilmsUrl, match.Groups[1].Value);
+                standardIceFilmsUrl= match.Groups[1].Value;
+                updateStatus(standardIceFilmsUrl);
+            }
         }
 
         private void grabData(object urlo)
