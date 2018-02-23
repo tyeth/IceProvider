@@ -101,7 +101,7 @@ namespace IceProvider
             catch (Exception e)
             {
                 console.log(e);
-                UpdateStatus(string.Format("GetLatestUrl: Failed to get url, exception:{0} inner exception:{1}",e,e.InnerException));
+                UpdateStatus(string.Format("GetLatestUrl: Failed to get url, exception:{0} inner exception:{1}", e, e.InnerException));
                 //throw;
             }
         }
@@ -144,9 +144,9 @@ namespace IceProvider
             }
         }
 
-        public async Task<IIceEpisode[]> GetEpisodesFromSeriesUrl(string url,bool resetResults=true)
+        public async Task<IIceEpisode[]> GetEpisodesFromSeriesUrl(string url, bool resetResults = true)
         {
-            if(resetResults)Results.Clear();
+            if (resetResults) Results.Clear();
             await GetSeries(url);
             return await Task.FromResult(Results.ToArray());
         }
@@ -177,10 +177,10 @@ namespace IceProvider
                 return;
             }
             totalEpisodes = episodeMatches.Count;
-            Invoke(_progressDelegate, new object[] {doneEpisodes, totalEpisodes});
+            Invoke(_progressDelegate, new object[] { doneEpisodes, totalEpisodes });
             foreach (Match episode in episodeMatches)
             {
-                await GetEpisode(episode, totalEpisodes,doneEpisodes);
+                await GetEpisode(episode, totalEpisodes, doneEpisodes);
             }
             Invoke(_progressDelegate, new object[] { 100, 100 });
             Invoke(_statusDelegate, new object[] { "Done!" });
@@ -189,30 +189,30 @@ namespace IceProvider
         private async Task<string> GetEpisodesFromPageByIPdotPhp(string url, int doneEpisodes)
         {
             int totalEpisodes;
-            Invoke(_statusDelegate, new object[] {"Grabbing IceFilms page..."});
+            Invoke(_statusDelegate, new object[] { "Grabbing IceFilms page..." });
             var showPage = await httpGet(url, "");
             if (showPage == "")
             {
                 //textOutput.Text = "Error: Couldn't grab page. Icefilms down?";
-                Invoke(_progressDelegate, new object[] {0, 100});
-                Invoke(_statusDelegate, new object[] {"Error: Couldn't grab page. Is icefilms down?"});
+                Invoke(_progressDelegate, new object[] { 0, 100 });
+                Invoke(_statusDelegate, new object[] { "Error: Couldn't grab page. Is icefilms down?" });
                 throw new Exception(_statusStream);
             }
 
             // Find the number of episodes
             var eMatches = Regex.Matches(showPage, "<a href=(\\\")?/ip.php");
             totalEpisodes = eMatches.Count;
-            
-            Invoke(_statusDelegate, new object[] {"Found " + totalEpisodes + " episodes."});
+
+            Invoke(_statusDelegate, new object[] { "Found " + totalEpisodes + " episodes." });
             return showPage;
         }
 
         public async Task GetEpisode(string url, int totalEpisodes = 1, bool resetResults = true)
         {
-            if(resetResults)Results.Clear();
-           await GetEpisode(Regex.Match(url, "[='\"]?(.*?ip.php\\?v=(?<vid>[0-9]+)&)"),totalEpisodes);
+            if (resetResults) Results.Clear();
+            await GetEpisode(Regex.Match(url, "[='\"]?(.*?ip.php\\?v=(?<vid>[0-9]+)&)"), totalEpisodes);
         }
-        private async Task GetEpisode(Match episode, int totalEpisodes=1,int doneEpisodes=0)
+        private async Task GetEpisode(Match episode, int totalEpisodes = 1, int doneEpisodes = 0)
         {
             await GetSecretSourcesPage(episode, out var sourcesPage, out var sec);
             if (sec == "")
@@ -223,7 +223,7 @@ namespace IceProvider
                 return;
             }
 
-             
+
             var sourceMatches = Regex.Matches(sourcesPage, "go\\(([0-9]+)\\)['\"]?>Source #[0-9]+:.*?</a>");
             var breakOut = false;
             var retrylogic = false;
@@ -282,28 +282,29 @@ namespace IceProvider
                     }
                     if (retries < 5) goto tryagain;
                 }
-                 if (!sourceResponse.Contains("GMorBMlet"))
+                if (!sourceResponse.Contains("GMorBMlet"))
                     continue;
                 var urlSplit = Regex.Split(sourceResponse, "GMorBMlet\\.php\\?url=");
                 var sourceURL = urlSplit[1];
-                 string[] cols =
-                {
+                string[] cols =
+               {
                     episode.SafelyGetGroupValue("season") , episode.SafelyGetGroupValue("episode") ,
                     WebUtility.HtmlDecode(episode.SafelyGetGroupValue("title") ) + string.Format(" ({0}", fsize),
                     Uri.UnescapeDataString(sourceURL)
                 };
                 var lvEpisode = new ListViewItem
                 {
-                    Name = WebUtility.HtmlDecode(episode.SafelyGetGroupValue("title") ) + string.Format(" ({0}", fsize),
-                    
+                    Name = WebUtility.HtmlDecode(episode.SafelyGetGroupValue("title")) + string.Format(" ({0}", fsize),
+
                     Url = Uri.UnescapeDataString(sourceURL),
-                    Checked = i == 0 ? true : false, FileName = fname
+                    Checked = i == 0 ? true : false,
+                    FileName = fname
                 };
-                 Invoke(_listViewDelegate, new object[] {lvEpisode});
-                 
+                Invoke(_listViewDelegate, new object[] { lvEpisode });
+
             }
             doneEpisodes++;
-            Invoke(_progressDelegate, new object[] {doneEpisodes, totalEpisodes});
+            Invoke(_progressDelegate, new object[] { doneEpisodes, totalEpisodes });
         }
 
         internal void Invoke(Delegate d, object[] p)
@@ -324,22 +325,43 @@ namespace IceProvider
             return await httpGet(strPage, strVars, _useStandardReferrer ? standardIceFilmsUrl : IceUrlWithSlash());
         }
 
-        internal async Task<string> httpGet(string strPage, string strVars, string referer)
+        internal async Task<string> httpGet(string strPage, string strVars, string referer, bool withCloudFlareProtection = true)
         {
-            //Initialization
-            var WebReq = (HttpWebRequest)WebRequest.Create(string.Format("{0}{1}", strPage, strVars));
-            //This time, our method is GET.
-            ConfigureGetRequest(referer, WebReq);
-            //From here on, it's all the same as above.
-            var WebResp = await WebReq.GetResponseAsync();
-            //Let's show some information about the response
-            //Console.WriteLine(WebResp.StatusCode);
-            //Console.WriteLine(WebResp.Server);
+            try
+            {
 
-            //Now, we read the response (the string), and output it.
-            var Answer = WebResp.GetResponseStream();
-            var _Answer = new StreamReader(Answer);
-            return _Answer.ReadToEnd();
+
+                //Initialization
+                var WebReq = (HttpWebRequest) WebRequest.Create(string.Format("{0}{1}", strPage, strVars));
+                //This time, our method is GET.
+                ConfigureGetRequest(referer, WebReq);
+                //From here on, it's all the same as above.
+
+                var WebResp = await WebReq.GetResponseAsync();
+                //Let's show some information about the response
+                //Console.WriteLine(WebResp.StatusCode);
+                //Console.WriteLine(WebResp.Server);
+
+                //Now, we read the response (the string), and output it.
+                var Answer = WebResp.GetResponseStream();
+                var _Answer = new StreamReader(Answer);
+                return _Answer.ReadToEnd();
+            }
+            catch (WebException e)
+            {
+                if (withCloudFlareProtection && e.Status== WebExceptionStatus.ProtocolError  && e.Message.Contains("(503)"))
+                {
+                    //if(e.Status as WebExceptionStatus /*==*/)
+                    console.log(e.Status.ToString());
+                }
+                throw;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
         }
 
         private void ConfigureGetRequest(string referer, HttpWebRequest WebReq)
@@ -395,7 +417,7 @@ namespace IceProvider
             // # video.php might (should) give us a cookie. We need to remember it!
             // Need to extract sec. This is the same for any source.
             var secMatch = Regex.Match(sourcesPage, "f\\.lastChild\\.value=\"(?<sec>.*?)\"");
-            sec = secMatch.SafelyGetGroupValue("sec") ;
+            sec = secMatch.SafelyGetGroupValue("sec");
             return Task.FromResult(sourcesPage);
         }
 

@@ -36,7 +36,7 @@ namespace CorexUnitTestProject
             [Fact]
             public async void Test_IceService_ResultsGetClearedAndPopulated()
             {
-                const string url = "https://icefilms.unblocked.bid/ip.php?v=242220&";
+                const string url = "https://icefilms.unblocked.pl/ip.php?v=242220&";
                 var i = new IceService();
                 var a = new EpisodeController(i); //i);
                 i.GetLatestIceUrl(true);

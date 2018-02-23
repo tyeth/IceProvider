@@ -514,5 +514,6 @@ namespace Ice.IcefilmsSeriesDownloader
         private delegate void ListViewDelegate(ListViewItem l);
 
         private delegate void StatusDelegate(string status);
+
     }
 }

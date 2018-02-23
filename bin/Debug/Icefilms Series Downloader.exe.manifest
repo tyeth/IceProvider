@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Icefilms Series Downloader.exe" size="193024">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Icefilms Series Downloader.exe" size="193536">
       <assemblyIdentity name="Icefilms Series Downloader" version="0.0.0.1" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/l1yXW0U2n1SnxxZMePAU5rWSawi8c7YI3IKnShdqg8=</dsig:DigestValue>
+        <dsig:DigestValue>jpJ2bD/O8X18wLMjiuNbI4lp73kxju9xQ9Z8pAwKCj8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

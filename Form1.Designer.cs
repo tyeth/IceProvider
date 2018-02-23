@@ -74,7 +74,7 @@
             // 
             // edtShowURL
             // 
-            this.edtShowURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.edtShowURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.edtShowURL.Location = new System.Drawing.Point(109, 27);
             this.edtShowURL.Name = "edtShowURL";
@@ -96,8 +96,8 @@
             // 
             // lvEpisodes
             // 
-            this.lvEpisodes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.lvEpisodes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lvEpisodes.AutoArrange = false;
             this.lvEpisodes.CheckBoxes = true;
@@ -111,8 +111,7 @@
             this.lvEpisodes.GridLines = true;
             this.lvEpisodes.Location = new System.Drawing.Point(12, 54);
             this.lvEpisodes.Name = "lvEpisodes";
-            this.lvEpisodes.OwnerDraw = false;
-            this.lvEpisodes.Size = new System.Drawing.Size(560, 299);
+            this.lvEpisodes.Size = new System.Drawing.Size(560, 260);
             this.lvEpisodes.TabIndex = 4;
             this.lvEpisodes.UseCompatibleStateImageBehavior = false;
             this.lvEpisodes.View = System.Windows.Forms.View.Details;
@@ -161,9 +160,9 @@
             // 
             // btnCopy
             // 
-            this.btnCopy.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            this.btnCopy.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCopy.Location = new System.Drawing.Point(12, 359);
+            this.btnCopy.Location = new System.Drawing.Point(12, 320);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(560, 23);
             this.btnCopy.TabIndex = 5;
@@ -176,7 +175,7 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.prgToolbar,
             this.txtStatus});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 385);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 346);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(584, 22);
             this.statusStrip1.TabIndex = 6;
@@ -262,7 +261,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -279,21 +278,21 @@
             // forTVShowToolStripMenuItem
             // 
             this.forTVShowToolStripMenuItem.Name = "forTVShowToolStripMenuItem";
-            this.forTVShowToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.forTVShowToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.forTVShowToolStripMenuItem.Text = "For TV Show";
             this.forTVShowToolStripMenuItem.Click += new System.EventHandler(this.forTVShowToolStripMenuItem_Click);
             // 
             // forMovieToolStripMenuItem
             // 
             this.forMovieToolStripMenuItem.Name = "forMovieToolStripMenuItem";
-            this.forMovieToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.forMovieToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.forMovieToolStripMenuItem.Text = "For Movie";
             this.forMovieToolStripMenuItem.Click += new System.EventHandler(this.forMovieToolStripMenuItem_Click);
             // 
             // forALLRESULTSToolStripMenuItem
             // 
             this.forALLRESULTSToolStripMenuItem.Name = "forALLRESULTSToolStripMenuItem";
-            this.forALLRESULTSToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.forALLRESULTSToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.forALLRESULTSToolStripMenuItem.Text = "For ALL RESULTS";
             this.forALLRESULTSToolStripMenuItem.Click += new System.EventHandler(this.forALLRESULTSToolStripMenuItem_Click);
             // 
@@ -301,7 +300,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 407);
+            this.ClientSize = new System.Drawing.Size(584, 368);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btnCopy);

@@ -40,3 +40,31 @@ G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\obj\Debug\NetStandardN
 G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.csproj.CoreCompileInputs.cache
 G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.dll
 G:\Icefilms\IcefilmsSeriesDownloader\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.pdb
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\bin\Debug\NetStandardNUnitTest.dll
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\bin\Debug\NetStandardNUnitTest.pdb
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\bin\Debug\Icefilms Series Downloader.exe
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\bin\Debug\nunit.framework.dll
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\bin\Debug\HtmlAgilityPack.dll
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\bin\Debug\Icefilms Series Downloader.pdb
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\bin\Debug\Icefilms Series Downloader.exe.config
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\bin\Debug\nunit.framework.xml
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\bin\Debug\HtmlAgilityPack.xml
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.dll
+C:\Users\user\Source\Repos\IceProvider\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.pdb
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.dll
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\obj\Debug\NetStandardNUnitTest.pdb
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\bin\Debug\NetStandardNUnitTest.dll
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\bin\Debug\NetStandardNUnitTest.pdb
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\bin\Debug\Icefilms Series Downloader.exe
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\bin\Debug\nunit.framework.dll
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\bin\Debug\Icefilms Series Downloader.pdb
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\bin\Debug\Icefilms Series Downloader.exe.config
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\bin\Debug\nunit.framework.xml
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Tyeth\source\repos\IceProvider\NetStandardNUnitTest\bin\Debug\HtmlAgilityPack.xml
