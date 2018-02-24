@@ -86,7 +86,7 @@ namespace CorexUnitTestProject
         [Fact]
         public async Task Test_IceService_ResultsGetClearedAndPopulated()
         {
-            const string EP_URL = @"/tv/series/8/7367";
+            const string EP_URL = @"/tv/series/6/5231";
             var i = new IceService();
             i.GetLatestIceUrl(true);
             Assert.Equal(i.Results.Count, 0);

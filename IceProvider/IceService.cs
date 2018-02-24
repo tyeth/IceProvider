@@ -161,7 +161,7 @@ namespace IceProvider
             var episodeMatches = Regex.Matches(
                 //match.SafelyGetGroupValue("episodes").ToString()
                 showPage
-                , "ip.php\\?v=(?<vid>[0-9]+)&[\"']?>(?<season>[0-9]+)x(?<episode>[0-9]+) (?<title>.*?)</a>");
+                , "ip.php\\?v=(?<vid>[0-9]+)&?[\"']?>(?<season>[0-9]+)?x?(?<episode>[0-9]+)? ?(?<title>.*?)?</a>");
             if (episodeMatches.Count < 1)
             {
                 //textOutput.Text = "Error: No episodes found for season #" + match.SafelyGetGroupValue("season");

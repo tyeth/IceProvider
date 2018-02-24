@@ -80,7 +80,7 @@
             this.edtShowURL.Name = "edtShowURL";
             this.edtShowURL.Size = new System.Drawing.Size(379, 20);
             this.edtShowURL.TabIndex = 1;
-            this.edtShowURL.Text = "https://icefilms.unblocked.uno/tv/series/1/814";
+            this.edtShowURL.Text = "https://icefilms.unblocked.uno/tv/series/6/5231";
             this.edtShowURL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.edtShowURL_KeyPress);
             // 
             // btnGo
